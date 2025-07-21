@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #1565c0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.main-header {
+  background-color: #0d47a1;
+  color: white;
+  padding: 16px 0;
+}
+
+.main-header h1 {
+  margin-bottom: 10px;
+}
+
+.main-header nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.main-header a {
+  color: white;
+  font-weight: bold;
+}
+
+.hero {
+  background-color: #e3f2fd;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.hero .btn {
+  background-color: #1976d2;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section.light {
+  background-color: #f9f9f9;
+}
+
+.grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  width: 280px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.list {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.logos img {
+  max-width: 120px;
+  margin: 12px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  background-color: #1565c0;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  background: #0d47a1;
+  color: white;
+  padding: 24px 0;
+  margin-top: 40px;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.branding .logo {
+  height: 50px;
+  width: auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.card {
+  flex: 1 1 250px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.social a i,
+.btn.whatsapp i {
+  margin-right: 8px;
+}
