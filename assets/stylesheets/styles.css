@@ -170,3 +170,9 @@ footer {
 .btn.whatsapp i {
   margin-right: 8px;
 }
+
+#servicio img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 6px;
+}
