@@ -172,7 +172,59 @@ footer {
 }
 
 #servicio img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
   border-radius: 6px;
+}
+
+/* ✅ GRID 3 COLUMNAS SOLO EN SECCIÓN SERVICIO */
+#servicio .grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 24px;
+  justify-items: center; /* centra las cards */
+}
+
+/* ✅ CARDS AJUSTADAS (ni gigantes ni chicas) */
+#servicio .grid .card {
+  width: 100%;
+  max-width: 350px;   /* tamaño equilibrado */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ✅ IMÁGENES AJUSTADAS */
+#servicio .grid .card img {
+  width: 100%;
+  height: auto;
+  max-height: 410px; /* altura equilibrada */
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* ✅ RESPONSIVE → 2 columnas en tablets */
+@media (max-width: 1024px) {
+  #servicio .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* ✅ RESPONSIVE → 1 columna en móviles */
+@media (max-width: 600px) {
+  #servicio .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+/* EFECTO HOVER ZOOM */
+#servicio .grid .card:hover img {
+  transform: scale(1.1);
+}
+
+#servicio .grid .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
